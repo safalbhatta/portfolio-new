@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#a78bfa" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.2"/>
+    </radialGradient>
+    <linearGradient id="main-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+    <linearGradient id="accent-gradient" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="tech-line" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="#181028"/>
+  <ellipse cx="32" cy="32" rx="22" ry="22" fill="url(#glow)"/>
+  <!-- Main triangle -->
+  <polygon points="32,14 46,50 18,50" fill="url(#main-gradient)"/>
+  <!-- Central circle -->
+  <circle cx="32" cy="32" r="10" fill="url(#accent-gradient)" opacity="0.85"/>
+  <!-- Stylized techy SB monogram using SVG paths -->
+  <defs>
+    <radialGradient id="outer-glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#312e81" stop-opacity="0.18"/>
+    </radialGradient>
+    <linearGradient id="hex-gradient" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a5b4fc"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0" y1="1" x2="1" y2="0">
+      <stop offset="0%" stop-color="#f472b6"/>
+      <stop offset="100%" stop-color="#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="20" fill="#181028"/>
+  <ellipse cx="32" cy="32" rx="24" ry="24" fill="url(#outer-glow)"/>
+  <!-- Central hexagon -->
+  <polygon points="32,14 48,24 48,40 32,50 16,40 16,24" fill="url(#hex-gradient)" opacity="0.93"/>
+  <!-- Accent lines -->
+  <rect x="31" y="10" width="2" height="12" rx="1" fill="url(#accent-line)"/>
+  <rect x="31" y="42" width="2" height="12" rx="1" fill="url(#accent-line)"/>
+  <rect x="10" y="31" width="12" height="2" rx="1" fill="url(#accent-line)"/>
+  <rect x="42" y="31" width="12" height="2" rx="1" fill="url(#accent-line)"/>
+  <!-- Floating diamond -->
+  <polygon points="32,24 36,32 32,40 28,32" fill="#fff" opacity="0.13"/>
+  <polygon points="32,27 34,32 32,37 30,32" fill="#a78bfa" opacity="0.22"/>
+  <!-- Subtle overlay for depth -->
+  <g opacity="0.09">
+    <rect x="12" y="12" width="40" height="40" rx="10" fill="#fff"/>
+  </g>

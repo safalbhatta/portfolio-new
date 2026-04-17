@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Test - Responsive Breakpoints</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+    .breakpoint {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .breakpoint h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+    .status {
+      padding: 10px;
+      border-radius: 4px;
+      margin: 5px 0;
+    }
+    .active {
+      background: #d4edda;
+      color: #155724;
+    }
+    .inactive {
+      background: #f8d7da;
+      color: #721c24;
+    }
+  </style>
+</head>
+<body>
+  <h1>📱 Mobile Responsive Test</h1>
+  <p>Your current screen size: <strong id="size"></strong></p>
+  
+  <div class="breakpoint">
+    <h3>🔍 Active Breakpoints</h3>
+    <div id="breakpoints"></div>
+  </div>
+
+  <script>
+    function checkBreakpoints() {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      
+      document.getElementById('size').textContent = `${width}px × ${height}px`;
+      
+      const breakpoints = [
+        { name: 'Mobile (≤ 360px)', min: 0, max: 360 },
+        { name: 'Small Phone (361px - 480px)', min: 361, max: 480 },
+        { name: 'Tablet Portrait (481px - 768px)', min: 481, max: 768 },
+        { name: 'Tablet Landscape (769px - 1024px)', min: 769, max: 1024 },
+        { name: 'Desktop (> 1024px)', min: 1025, max: Infinity }
+      ];
+      
+      let html = '';
+      breakpoints.forEach(bp => {
+        const isActive = width >= bp.min && width <= bp.max;
+        html += `<div class="status ${isActive ? 'active' : 'inactive'}">
+          ${isActive ? '✅' : '⭕'} ${bp.name}
+        </div>`;
+      });
+      
+      document.getElementById('breakpoints').innerHTML = html;
+    }
+    
+    checkBreakpoints();
+    window.addEventListener('resize', checkBreakpoints);
+  </script>
+</body>
+</html>

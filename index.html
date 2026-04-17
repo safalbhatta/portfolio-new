@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shafal Bhatta | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Particle Background -->
+  <div id="particles-js"></div>
+  
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ====== HEADER / NAVBAR ====== -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Shafal<span>Bhatta</span></h1>
+      <ul class="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ====== HERO SECTION ====== -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h2 class="fade-in">Hello, I'm <span class="gradient-text">Shafal Bhatta</span></h2>
+        <div class="typing-container">
+          <p>I'm a <span class="typing-text"></span></p>
+        </div>
+        <p class="hero-description">A Computer Engineering student passionate about AI, ML and Web Development.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn primary-btn">
+            <i class="fas fa-briefcase"></i> View My Work
+          </a>
+          <a href="files/CV_Shafal_Bhatta.pdf" download="CV_Shafal_Bhatta.pdf" class="btn secondary-btn">
+            <i class="fas fa-download"></i> Download CV
+          </a>
+        </div>
+        <div class="social-links">
+          <a href="mailto:shafalbhatta1@gmail.com" class="social-icon" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://github.com/shafalbhatta" target="_blank" class="social-icon" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/shafalbhatta" target="_blank" class="social-icon" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://twitter.com/bhattasafal1" target="_blank" class="social-icon" title="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/images/profile.jpg" 
+               onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop'" 
+               alt="Shafal Bhatta" />
+          <div class="image-overlay"></div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <a href="#about">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+    <!-- ====== CV SECTION ====== -->
+    <!-- ====== CV SECTION REMOVED (Download CV button only in hero) ====== -->
+
+  <!-- ====== ABOUT SECTION ====== -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <h2 class="section-title">About <span>Me</span></h2>
+      <div class="section-subtitle">Get to know me better</div>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="about-img-wrapper">
+            <img src="assets/images/profile.jpg" 
+                 onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&h=500&fit=crop'" 
+                 alt="About Safal" />
+          </div>
+        </div>
+        <div class="about-text">
+          <h3>Hi There! I'm Shafal Bhatta</h3>
+          <p>A <strong>Computer Engineering</strong> student with a strong interest in Artificial Intelligence and Full Stack Web Development.
+            I enjoy building practical projects and exploring how technology can be used to solve real-world problems.
+          </p>
+          <p>
+            I’ve been working with both backend and frontend tools to create user-friendly applications while continuously improving my skills in programming and problem-solving.
+            I aim to keep learning modern technologies and build meaningful, impactful solutions.
+          </p>
+          </p>
+          <div class="about-stats">
+            <div class="stat-box">
+              <i class="fas fa-project-diagram"></i>
+              <h4>5+</h4>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-code"></i>
+              <h4>10+</h4>
+              <p>Technologies</p>
+            </div>
+            <div class="stat-box">
+              <i class="fas fa-coffee"></i>
+              <h4>500+</h4>
+              <p>Cups of Coffee</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ====== SKILLS SECTION ====== -->
+  <section id="skills" class="skills section-padding">
+    <div class="container">
+      <h2 class="section-title">My <span>Skills</span></h2>
+      <div class="section-subtitle">Technologies I work with</div>
+
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-code"></i>
+            <h3>Programming</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill">Python</span>
+            <span class="skill">JavaScript</span>
+            <span class="skill">C</span>
+            <span class="skill">C++</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-globe"></i>
+            <h3>Web Development</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">React</span>
+            <span class="skill">Node.js</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-brain"></i>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill">Machine Learning</span>
+            <span class="skill">Deep Learning</span>
+            <span class="skill">CNN</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="category-header">
+            <i class="fas fa-tools"></i>
+            <h3>Tools</h3>
+          </div>
+          <div class="skill-items">
+            <span class="skill">Git</span>
+            <span class="skill">GitHub</span>
+            <span class="skill">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+        </div>
+  </section>
+
+  <!-- ====== PROJECTS SECTION ====== -->
+  <section id="projects" class="projects section-padding">
+    <div class="container">
+      <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="section-subtitle">Recent work I've done</div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project1.jpg" 
+                 onerror="this.src=\'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop'" 
+                 alt="Skin Disease Classification" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://skin-disease-classification-using-cnn-u5kx.onrender.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">AI</span>
+              <span class="tag">Deep Learning</span>
+              <span class="tag">Python</span>
+            </div>
+            <h3>Skin Disease Classification</h3>
+            <p>skin disease classification model using CNN for disease detection for four classes .</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project2.jpg" 
+                 onerror="this.src=\'https://images.unsplash.com/photo-1552664730-d307ca884978?w=800&h=600&fit=crop'" 
+                 alt="Prompt Analyzer" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://prompt-analyzer20.onrender.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Computer Vision</span>
+              <span class="tag">OpenCV</span>
+              <span class="tag">Python</span>
+            </div>
+            <h3>Prompt Analyzer</h3>
+            <p>Get a score, understand issues, and improve your prompts with detailed analysis and recommendations.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project3.jpg" 
+                 onerror="this.src=\'https://images.unsplash.com/photo-1611532736540-6dabab8c0c64?w=800&h=600&fit=crop'" 
+                 alt="GIF-Fusion" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://gif-fusion.onrender.com" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">Full Stack</span>
+              <span class="tag">React</span>
+              <span class="tag">Node.js</span>
+            </div>
+            <h3>GIF-Fusion</h3>
+            <p>Create amazing animated GIFs by merging and editing images with powerful tools and effects.</p>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-image">
+            <img src="assets/images/project4.jpg" 
+                 onerror="this.src=\'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=600&fit=crop'" 
+                 alt="imagetoolify" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://imagetoolify.netlify.app" target="_blank" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">API</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <h3>imagetoolify</h3>
+            <p>All-in-one image toolkit for PDF creation, compression, and size reduction with a clean, easy-to-use interface.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact section-padding">
+    <div class="container">
+      <h2 class="section-title">Get In <span>Touch</span></h2>
+      <div class="section-subtitle">Let's work together</div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <h3>Let's talk about everything!</h3>
+          <p>I'm always open to new opportunities!</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Email</h4>
+                <a href="mailto:safalbhatt1@gmail.com">safalbhatta1@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Phone</h4>
+                <a href="tel:+9779702284145">9702284145</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-text">
+                <h4>Location</h4>
+                <p>Kathmandu, Nepal</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="contact-text">
+                <h4>LinkedIn</h4>
+                <a href="https://linkedin.com/in/safalbhatta" target="_blank">linkedin.com/in/safalbhatta</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm" action="https://formspree.io/f/xanpvkve" method="POST">
+            <div class="form-group">
+              <input type="text" id="name" name="name" placeholder="Your Name" required />
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" placeholder="Your Email" required />
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" placeholder="Subject" required />
+              <i class="fas fa-tag"></i>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+              <i class="fas fa-comment"></i>
+            </div>
+            <button type="submit" class="btn submit-btn">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Shafal<span>Bhatta</span></h3>
+        <p>Computer Engineering Student | AI Enthusiast | Web Developer</p>
+        <div class="footer-social">
+          <a href="mailto:safalbhatta1@gmail.com" class="social-icon" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://github.com/safalbhatta" target="_blank" class="social-icon" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/safalbhatta" target="_blank" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://twitter.com/bhattasafal1" target="_blank" class="social-icon" title="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">AI Solutions</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Shafal Bhatta. All rights reserved. Made with <i class="fas fa-heart"></i> and <i class="fas fa-coffee"></i></p>
+
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
