@@ -346,7 +346,7 @@
         </div>
 
         <div class="contact-form">
-          <form id="contactForm" action="https://formspree.io/f/xanpvkve" method="POST">
+          <form id="contactForm" >
             <div class="form-group">
               <input type="text" id="name" name="name" placeholder="Your Name" required />
               <i class="fas fa-user"></i>
@@ -418,3 +418,10 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
+  <!-- Formspree AJAX Integration -->
+  <script>
+    window.formspree = window.formspree || function () { (formspree.q = formspree.q || []).push(arguments); };
+    formspree('initForm', { formElement: '#contactForm', formId: 'xzdyrebr' });
+  </script>
+  <script src="https://unpkg.com/@formspree/ajax@1" defer></script>
